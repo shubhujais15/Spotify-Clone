@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Varela+Round&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: antiquewhite;
+}
+nav{
+  font-family: 'Playfair Display',serif;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+li{
+  padding: 20px;
+}
+.logo img{
+  width: 45px;
+  padding: 5px;
+}
+.logo{
+  display:  flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.container{
+  min-height:75vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 70%;
+  margin: 25px auto;
+  border-radius: 7px;
+  background-image: url('./bg.jpg');
+}
+.bottom{
+  position: sticky;
+  bottom: 0;
+  height: 130px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#progressbar{
+  width: 80%;
+  cursor: pointer;
+}
+.icons{
+  color: white;
+  width: 50px;
+  display: flex;
+  /* padding: 5px; */
+}
+.icons i{
+  padding: 5px;
+  cursor: pointer;
+}
+.songitem{
+  height: 50px;
+  /* width 80%; */
+  display: flex;
+  background-color: white;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 25px;
+}
+.songitem img{
+  height:45px;  
+  margin: 0 10px;
+  border-radius: 50%;
+}
+.songName{
+  margin: 0 10px;
+  padding:5px;
+}
+.timeStamp{
+  margin:0 10px;
+}
+.timeStamp i{
+  margin: 0 5px;
+  cursor: pointer;
+}
+.songInfo{
+  position: absolute;
+  left: 10vw;
+  color: white;
+}
+.songInfo img{
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  height: 25px;
+  margin-right: 3px;
+}
